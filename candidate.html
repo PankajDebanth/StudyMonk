@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candidate Search - Recruitment Solution App</title>
+    <link rel="stylesheet" href="Style/candidate.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Recruitment Solution App</h1>
+    </header>
+
+    <main>
+      <section class="search">
+        <h2>Candidate Search</h2>
+        <div class="search-form">
+          <label for="location">Location:</label>
+          <select id="location">
+            <option value="">All</option>
+            <option value="New York">New York</option>
+            <option value="London">London</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Bangalore">Bangalore</option>
+            <!-- Add more location options as needed -->
+          </select>
+
+          <label for="job-role">Job Role:</label>
+          <select id="job-role">
+            <option value="">All</option>
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="HR Manager">HR Manager</option>
+            <option value="Sales Executive">Sales Executive</option>
+            <!-- Add more job role options as needed -->
+          </select>
+
+          <button id="search-btn">Search</button>
+        </div>
+      </section>
+
+      <section class="results">
+        <h3>Search Results</h3>
+        <ul id="candidate-list"></ul>
+      </section>
+
+      <section class="ranking">
+        <h3>Ranking and Evaluation</h3>
+        <ul id="ranking-list"></ul>
+      </section>
+    </main>
+
+    <script src="JS/candidate.js"></script>
+  </body>
+</html>
